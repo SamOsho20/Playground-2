@@ -31,8 +31,7 @@ def renderingboxes(num, color):
     return render_template("index.html", num = num, color = color)
 
 # When a user visits localhost:5000/play/(x)/(color),
-# have it display beautiful looking boxes x times,
-#friday!
+# have it display beautiful looking boxes x times, with the stated color 
 
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
     app.run(debug=True)

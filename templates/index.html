@@ -9,12 +9,13 @@
         display: flex;
         justify-content: space-evenly;
         margin: 0 auto;
+        flex-wrap: wrap;
     }
     p{
-        background-color: color(srgb red green blue);
+        background-color: red;
         height: 200px;
         width: 200px;
-        display: flex;
+    
     
     }
 </style>
@@ -22,7 +23,12 @@
 <body>
     <div class="head-row">
         {% for x in range (0,num):%}
-            <p>{{background-color: color}}</p>
+            <p class="color-back" style="background-color: {{color}};"></p>
+            <!-- #when using jinja syntax that connect back to server file we want 
+            to place double brackets around teh variable  -->
+            
+            <!-- # for inline styling we state the attribute which is background-color 
+            then we state the attributes value which is "color" -->
         {%endfor%}
 
     </div>
