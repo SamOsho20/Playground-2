@@ -32,6 +32,7 @@ def renderingboxes(num, color):
 
 # When a user visits localhost:5000/play/(x)/(color),
 # have it display beautiful looking boxes x times,
+#friday!
 
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
     app.run(debug=True)
